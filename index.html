@@ -456,6 +456,19 @@
     box-shadow: 0 20px 40px rgba(35, 46, 76, 0.15);
 }
 
+/* Técnica Moderna para YouTube Shorts (Vídeo Vertical) */
+.video-container-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* Limita a largura para não ficar gigante no PC */
+    margin: 0 auto; /* Centraliza a caixa na tela */
+    aspect-ratio: 9 / 16; /* A Mágica: Força a proporção exata do celular */
+    overflow: hidden;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(35, 46, 76, 0.15);
+}
+
 .video-container-wrapper iframe {
     position: absolute;
     top: 0;
@@ -493,25 +506,25 @@
             </div>
         </div>
 
-    <section class="secao-video">
-        <h3 style="text-align: center; margin-bottom: 25px; font-size: 1.6rem;">
+        <section class="secao-video">
+    <h3 style="text-align: center; margin-bottom: 25px; font-size: 1.6rem;">
         Assista ao recado do <span class="sublinhado-elite" style="text-decoration-color: var(--azul-vivo)">Dr. Maurício Jatobá</span>
-        </h3>
+    </h3>
     
-        <div class="video-container-wrapper">
-            <iframe 
-                 src="https://www.youtube.com/shorts/3ycSGHqQKFI?feature=share" 
-                title="Recado Dr. Maurício Jatobá" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
-        </div>
+    <div class="video-container-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/3ycSGHqQKFI?rel=0" 
+            title="Recado Dr. Maurício Jatobá" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
     
-    <p style="text-align: center; font-size: 0.9rem; color: var(--cinza-azulado); margin-top: 15px; font-style: italic;">
+    <p style="text-align: center; font-size: 0.9rem; color: var(--cinza-azulado); margin-top: 25px; font-style: italic;">
         "Entenda por que 2026 será o ano da maior redistribuição de honorários da advocacia."
     </p>
-</section>    
+</section>
 
         <article>
             <p class="primeiro-paragrafo">
