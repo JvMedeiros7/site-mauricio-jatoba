@@ -435,6 +435,36 @@
             color: var(--azul-vivo);
         }
 
+            /* =========================================
+   10. SEÇÃO DE VÍDEO (Responsivo)
+   ========================================= */
+.secao-video {
+    margin: 60px 0;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--borda-suave);
+}
+
+/* Técnica de "Aspect Ratio" para o vídeo não deformar */
+.video-container-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(35, 46, 76, 0.15);
+}
+
+.video-container-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 
     </style>
 </head>
@@ -462,6 +492,26 @@
                 <p style="font-size: 0.95rem; color: var(--cinza-azulado); margin-top: 0; line-height: 1.4;">com +12 anos de trincheira.</p>
             </div>
         </div>
+
+    <section class="secao-video">
+        <h3 style="text-align: center; margin-bottom: 25px; font-size: 1.6rem;">
+        Assista ao recado do <span class="sublinhado-elite" style="text-decoration-color: var(--azul-vivo)">Dr. Maurício Jatobá</span>
+        </h3>
+    
+        <div class="video-container-wrapper">
+            <iframe 
+                 src="https://www.youtube.com/shorts/3ycSGHqQKFI?feature=share" 
+                title="Recado Dr. Maurício Jatobá" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    
+    <p style="text-align: center; font-size: 0.9rem; color: var(--cinza-azulado); margin-top: 15px; font-style: italic;">
+        "Entenda por que 2026 será o ano da maior redistribuição de honorários da advocacia."
+    </p>
+</section>    
 
         <article>
             <p class="primeiro-paragrafo">
